@@ -1,0 +1,42 @@
+@api = http://localhost:5000
+
+
+GET {{api}}/carritos
+
+###
+GET {{api}}/carritos/6095e63f0cd9d922344c65e4
+
+###
+POST {{api}}/carritos
+Content-Type: application/json
+
+{
+    "carritoID": "6095e63f0cd9d922344c65e4",
+    "productoID": "6090c034ce05e6cf87bd0fb2",
+    "modelo": "Black",
+    "estatus": "Reservado",
+    "cantidad": 30
+}
+
+###
+DELETE  {{api}}/carritos/609059d8903ac51c7858d0ba
+
+###
+PUT {{api}}/carritos/6095e63f0cd9d922344c65e4
+Content-Type: application/json
+
+{
+    "carritoID" : "6095e63f0cd9d922344c65e4",
+    "productoID" : "6090c034ce05e6cf87bd0fb2",
+    "models": "Black",
+    "estatus": "Pagado",
+    "cantidad": 7
+}
+
+###
+PUT {{api}}/carritoProduct/6095e63f0cd9d922344c65e4
+Content-Type: application/json
+
+{
+    "estatus" : "pagado"
+}
