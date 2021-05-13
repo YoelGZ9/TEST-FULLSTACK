@@ -1,0 +1,25 @@
+Instrucciones
+
+El sistema se dividio en dos carpetas.
+-api: Es la carpeta donde encontraremos toda la codificacion del back
+-frondend: es la carpeta donde econtraremos toda la codificacion de frontend
+
+--Back
+-El servidor por defecto esta corriendo en el puerto 5000
+-Se uso una base de datos local de MongoDBCompass
+-Se creo una base de datos llamada: ecommerce
+-El archivo con los datos de los productos se encuentra en la carpeta api/src/data/products.ts
+-Toda la configuracion de la base de datos y puerto se encuentra en el archivo config.ts
+
+-Aplicar el comando en la carpeta de api para importar la informacion de los productos (Autos) en la base de datos:
+npm run data:import
+
+-El comando para correr el servidor es: npm run dev
+
+
+--Frontend
+-El servidor por defecto esta corriendo en el puerto 3000
+-Se uso el framework Next JS para el desarrollo
+-Para la generacion de ID aleatorias para el carrito de ventas se uso la libreria uuid
+
+-El comando para correr el servidor es: npm run dev
