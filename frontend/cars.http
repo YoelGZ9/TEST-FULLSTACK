@@ -1,0 +1,28 @@
+@api = http://localhost:5000
+
+
+GET {{api}}/cars
+
+###
+GET {{api}}/videos/60905b78cb43942b64010e58
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=wOLo-B7mrZM&ab_channel=Fazt",
+    "title": "fazt video",
+    "description": "This is a fazt video"
+}
+
+###
+DELETE  {{api}}/videos/609059d8903ac51c7858d0ba
+
+###
+PUT {{api}}/videos/60905b78cb43942b64010e58
+Content-Type: application/json
+
+{
+    "title": "Este es lo nuevo prro 2"
+}

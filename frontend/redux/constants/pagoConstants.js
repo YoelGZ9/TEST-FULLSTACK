@@ -1,0 +1,8 @@
+export const GET_DATA_PAGO = "GET_DATA_PAGO";
+
+export const INSERT_DATA_PAGO = "INSERT_DATA_PAGO";
+
+//export const DATA_PAGO_SUCCESS = "DATA_PAGO_SUCCESS";
+
+export const DATA_PAGO_FAIL = "DATA_PAGO_FAIL";
+
